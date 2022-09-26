@@ -1,0 +1,283 @@
+body{
+	/*font-family: 'Ubuntu Mono', monospace;*/
+	background: #FFFFFF;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	color: #6B6A69;
+	margin: 0; /*отступы по умолчанию ноль*/ 
+	
+}
+*,
+*:befor,
+*:after{
+	box-sizing: border-box; /*алгоритм подсчета размара блоков с учетом пэдингов т.e картинка подстраивается под размер*/
+}
+
+/*HEADER
+================================*/
+.header{
+	padding: 20px;
+    border-bottom:1px solid #F7F6F6; /*подчеркивание*/
+    /*position: fixed;*/
+}
+/*CONTAINER*/
+.container{
+	width: 100%; /*рисунок будет растянут на всю ширину веб-страницы*/
+	max-width: 1250px; 
+	margin: 0 auto;  /*автоматически добавлять отступ с боков блока, слева и права, а снизу и сверху значения "0"*/
+}	
+.header__inner{
+	display: flex; /*Внутренние div-ы выстраиваются в ряд (вдоль главной оси) */
+	justify-content:left; /* Выравнивание элементов по левому краю */
+	align-items: center; /*выравнивание эллементов по центральной оси*/
+}
+.header__logo{
+
+}
+
+/*NAV*/
+.nav{
+	font-size: 15px;
+	font-weight: -77;
+	display: flex; /*эллементы впритык*/
+	
+}
+.nav__link{
+	color: #6B6A69;
+	text-decoration: none;
+	opacity: .75;  /*прозрачность*/
+	transition: opacity .1s linear ; /*плавный переход*/
+	margin-left: 30px; /*отступ слева*/
+}
+.nav__link:hover{  /*при наводе*/
+opacity: 1;    
+}
+.nav__link:first-child{  /*для первого эллемента*/
+	margin-left: 60px;
+}
+/*BUTTON*/
+.btn{
+	font-family: 'Ubuntu Mono', monospace;
+	text-decoration: none;
+	border-radius: 25px;
+	font-size: 17px;
+	padding: 10px 24px;
+	border: 0;         /*границы на ноль*/
+	cursor: pointer; /*при наведении появляется курсор*/	
+}
+.btn--red{
+	background-color: #D12D35;
+	color: #FFFFFF;
+	margin-left: 309px;
+}
+.btn--white{
+	background-color: #EDE9E3;
+	color: #221F20;
+	margin-left: 32px;
+}
+
+/*INTRO
+=======================*/
+.intro{
+    width: 100%; /*рисунок будет растянут на всю ширину веб-страницы*/
+	max-width: 1250px; 
+	margin: 0 auto;
+	height: 481px;
+	background: #FFFFFF;
+	
+}
+.intro__img{
+	display: flex;
+	justify-content:left;
+}
+
+/*MENU
+=====================*/
+.menu__m{
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 48px;
+	color: #221F20;
+	
+
+	font-weight: 800;
+
+	width: 100%; 
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+.navbar{
+	width: 100%;
+	
+	margin: 0 auto;
+	height: 40px;
+	border-bottom:1px solid #F7F6F6;
+	padding-bottom: 20px;
+	background-color: #FFFFFF;
+	/*фиксированная шапка*/
+	position: sticky;
+	z-index: 3;
+	top: 0;
+
+}
+.menu__conteiher{
+	max-width: 1250px; 
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	
+}
+
+.navbar__menu{
+	list-style-type: none;  /*убираем точки*/
+	font-size: 18px;
+	color: #6B6A69;
+	font-weight: 700;
+	text-decoration: none;	
+	margin-left: 60px;
+
+}
+
+.navbar__menu:hover{
+	
+}
+
+.navbar__menu li {
+	display: inline-block; /*не выходит за границы родителя*/
+    
+}
+
+/*CARD
+==============*/
+.stock{
+	width: 100%;
+	background-color: #F7F6F6;
+
+}
+.new{
+	width: 100%;
+	background-color: #FFFFFF;
+}
+.card__conteiner{
+	max-width: 1250px; 
+	margin: 0 auto; 
+	height: 500px;	
+}
+.name{
+	padding-top: 40px;
+	padding-bottom: 30px;
+	font-size: 25px;
+	font-weight: 800;
+	color: #221F20;
+
+}
+.card__table{
+	border-spacing: 0px 0px;
+}
+
+.card{
+	height: 365px;
+	width: 294px;
+	text-align: center;
+}
+.card:hover{
+	background-color: #FFFFFF;
+}
+.card_w{
+	height: 365px;
+	width: 294px;
+	text-align: center;
+}
+.card_w:hover{
+	background-color: #F8F6F5;
+}
+
+.card_g__img{
+	height: 200px;
+	margin-top: 15px;
+	transition: .3s;
+}
+.card_g__img:hover{
+	height: 70%;
+	margin-top: 0;
+}	
+}
+.card_name{
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+.card_price{
+	font-size: 24px;
+	color: #D12D35;
+	margin: 0;
+}
+
+.card_btm{
+	height: 40px;
+	width: 40px;
+	border-radius: 20px;
+	margin-top: 20px;
+	border: 0;
+	background-color: #FFFFFF;
+	box-shadow: 5px 5px 5px  #F0EFF0;
+
+	
+}
+.card_btm_text{
+	font-size: 25px;
+	margin-bottom: 3px;
+}
+
+/*FOOTER
+=====================*/
+.footer {
+	width: 100%;
+	height: 760px;
+	background-color: #FFFFFF;
+}
+.footer table{
+	border-spacing: 40px 0;
+}
+.footer_img{
+	text-align: center;
+}
+.footer__contaiher{
+    padding-top: 70px;
+    padding-bottom: 35px;
+    padding-left: 96px;
+    padding-right: 96px;
+	max-width: 1250px;
+
+}
+
+.td{
+	height: 420px;
+	width: 180px;
+	
+	
+}
+.td_center{
+	height: 420px;
+	width: 280px;
+	margin-left: 40px;
+	
+}
+.caption{
+	color: #000000;
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+.subtitle{
+	font-size: 18px;
+
+
+}
+.subtitle__link{
+	text-decoration: none;
+	color: #6B6A69;
+	margin-bottom: 40px;
+	
+}
